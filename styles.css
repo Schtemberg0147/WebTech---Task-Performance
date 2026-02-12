@@ -1,0 +1,216 @@
+/*Import fonts css file*/
+@import url('fonts.css'); 
+
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/*Black rectangle section at the top*/
+.rectangle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangle p { /*Text inside the black rectangle*/
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Satoshi-Light', sans-serif; /*Custom font-family*/
+}
+
+.rectangle a { /*Sign Up Link*/
+  color: white;
+  text-decoration: underline;
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.rectangle img { /*close button*/
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  align-items: end;
+}
+
+/*Navigation section of the page*/
+.navigation {
+    position: fixed;
+    top: 50px; /* sits below black bar */
+    left: 0;
+    width: 100%;
+    height: 70px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2.5%;
+    background-color: #fff;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* controls space between logo and links */
+    margin-left: 5%;
+}
+
+.logo a {
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Integral CF Bold', sans-serif; /*Custom font-family*/
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.shop-dropdown {
+  display: inline-flex;        /* THIS fixes alignment */
+  align-items: center;         /* vertical alignment */
+  gap: 6px;                    /* space between text & icon */
+
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.shop-dropdown img {
+  width: 25px;                 /* control icon size */
+  height: 25px;
+  display: block;              /* removes weird baseline spacing */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    margin-top: 8px;
+    font-size: 18px;
+    transition: color 0.2s;
+    font-family: 'Satoshi-Regular', sans-serif; /*Custom font-family*/
+}
+
+.nav-links a:hover {
+    color: #ff6600; /* highlight color on hover */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* space between profile images */
+    margin-right: 5%;
+}
+
+/* Search bar*/
+.search-form {
+  width: 825px;
+}
+
+.search-wrapper {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 9999px;
+  height: 44px;
+  padding: 0 15px;
+  position: relative;
+}
+
+/* icon */
+.icon img {
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
+}
+
+/* INPUT */
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: #000;
+  opacity: 80%;
+  outline: none;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: 'Satoshi-Light', sans-serif; /*Custom font-family*/
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  border: none;
+  background: #000;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.close-btn img {
+  width: 12px;
+  height: 12px;
+}
+
+/* SHOW CLOSE WHEN TYPING */
+.search-input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* FOCUS EFFECT */
+.search-wrapper:focus-within {
+  background: white;
+  border: 1.5px solid #000;
+}
+
+.profile img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/*Gray section under the navigation*/
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 500px;
+    margin-top: 155px;
+    background-color: #F2F0F1;
+}
+
+body{
+    margin: 0;
+}
+

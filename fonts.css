@@ -1,0 +1,38 @@
+/*Importing Custom Fonts*/
+@font-face {
+  font-family:'Satoshi-Light';
+  src: url('fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),
+       url('fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Satoshi-Light';
+  src: url('fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url(fonts/Integral_CF/Fontspring-DEMO-integralcf-regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Integral CF Bold';
+    src: url(fonts/Integral_CF/Fontspring-DEMO-integralcf-bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
