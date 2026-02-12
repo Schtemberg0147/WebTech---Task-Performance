@@ -24,6 +24,12 @@
 }
 
 @font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Bold.woff') format('woff');
+}
+
+@font-face {
     font-family: 'Integral CF';
     src: url(fonts/Integral_CF/Fontspring-DEMO-integralcf-regular.otf) format('opentype');
     font-weight: normal;
