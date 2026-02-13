@@ -202,7 +202,6 @@ body {
 /*Gray section under the navigation*/
 /* CONTENT SECTION */
 .content {
-  position: relative;
   margin-top: 120px; /* space below fixed nav */
   display: flex;
   align-items: center;
@@ -213,9 +212,10 @@ body {
 
 /* LEFT SIDE */
 .content-left {
-  margin-top: 1%;
-  margin-left: 8%;
+  position: relative;
+  margin-left: 9%;
   max-width: 800px;
+  margin-bottom: 4%;
 }
 
 /* HEADING */
@@ -250,7 +250,9 @@ body {
 
 /* STATS */
 .stats { 
+  position: absolute;
   display: flex;
+  right: -65px;
 }
 
 .stat {
@@ -277,30 +279,34 @@ body {
 
 /* RIGHT SIDE IMAGE */
 .content-right {
-  display: flex;
+  position: relative;
   justify-content: flex-start;
 }
 
 .content-right img {
-  margin-top: 57px;
+  position: absolute;
   margin-right: 57px;
-  width: 750px;
+  height: 675px;
+  bottom: -350px;
+  right: -700px;
+  width: auto;
 }
 
-.content-right .spark1, .spark2{
+.spark1 img{
   position: absolute;
-  width: 20px;
+  top: 450px;
+  right: 775px;
+  width: 58px;
+  height: auto;
   z-index: 1;
 }
-
-.spark1 {
-  top: 1000px;
-  left: 900px;
-}
-
-.spark2 {
-  top: 300px;
-  left: 800px;
+.spark2 img{
+  position: absolute;
+  top: 250px;
+  right: 200px;
+  width: 120px;
+  height: auto;
+  z-index: 1;
 }
 
 /* Brands */
