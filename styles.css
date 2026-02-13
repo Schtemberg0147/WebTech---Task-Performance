@@ -108,12 +108,13 @@ body {
     color: #000;
     margin-top: 8px;
     font-size: 18px;
-    transition: color 0.2s;
+    transition: color 1s;
     font-family: 'Satoshi-Regular', sans-serif; /*Custom font-family*/
 }
 
 .nav-links a:hover {
-    color: #ff6600; /* highlight color on hover */
+  color: #ff6600; /* highlight color on hover */
+  filter: brightness(0) saturate(100%) invert(53%) sepia(95%) saturate(1000%) hue-rotate(10deg);
 }
 
 .profile {
@@ -121,6 +122,12 @@ body {
     align-items: center;
     gap: 25px; /* space between profile images */
     margin-right: 5%;
+    transition: filter 0.8s;
+}
+
+.profile img:hover {
+  color: #ff6600; /* highlight color on hover */
+  filter: brightness(0) saturate(100%) invert(53%) sepia(95%) saturate(1000%) hue-rotate(10deg);
 }
 
 /* Search bar*/
@@ -246,6 +253,10 @@ body {
   width: 200px;
   font-size: 16px;
   font-family: 'Satoshi-Regular', sans-serif; /*Custom font-family*/
+}
+
+.shop-btn:hover {
+  color: #f8da80; /* highlight color on hover */
 }
 
 /* STATS */
